@@ -1,0 +1,21 @@
+,Days,Season,Fog,Rain,Class
+0,Weekday,Spring,None,None,On time
+1,Weekday,Winter,None,Slight,On time
+2,Weekday,Winter,None,None,On time
+3,Holiday,Winter,High,Slight,Late
+4,Saturday,Summer,Normal,None,On time
+5,Weekday,Autumn,Normal,None,Very late
+6,Holiday,Summer,High,Slight,On time
+7,Sunday,Summer,Normal,None,On time
+8,Weekday,Winter,High,Heavy,Very late
+9,Weekday,Summer,None,Slight,On time
+10,Saturday,Spring,High,Heavy,Cancelled
+11,Weekday,Summer,High,Slight,On time
+12,Weekday,Winter,Normal,None,Late
+13,Weekday,Summer,High,None,On time
+14,Weekday,Winter,Normal,Heavy,Very late
+15,Saturday,Autumn,High,Slight,On time
+16,Weekday,Autumn,None,Heavy,On time
+17,Holiday,Spring,Normal,Slight,On time
+18,Weekday,Spring,Normal,None,On time
+19,Weekday,Spring,Normal,Heavy,On time
