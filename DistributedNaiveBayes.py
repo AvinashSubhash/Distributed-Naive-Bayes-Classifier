@@ -6,7 +6,6 @@ import multiprocessing as mp
 import threading as th
 import random
 import time
-import NaveBayes as nb
 
 k_val=1
 df = pd.read_csv('out.csv')
@@ -86,24 +85,24 @@ if __name__ == "__main__":
     
     
     #Menu Driven Section
-    option = 1
-    while True:
-        print("Enter the Class Options to select: ")
-        input_list = []
-        for m in range(len(cls)):
-            if cls[m]!="Class":
-                option_list = list(df[cls[m]].unique())
-                for gg in range(len(option_list)):
-                    print(gg,": ",option_list[gg])
-                #print(df[cls[m]].unique())
-                print("\n\n")
-                f = int(input("Option: "))
-                print("\n")
-                if f < 0 or f >= len(option_list):
-                    exit()
-                input_list.append(option_list[f])
-        final_output,perc = predict(input_list,result,cls,list(set(df["Class"])))
-        print("Result: \n")
-        print(final_output, " with Probability: ",perc)
-        break
+    # option = 1
+    # while True:
+    #     print("Enter the Class Options to select: ")
+    #     input_list = []
+    #     for m in range(len(cls)):
+    #         if cls[m]!="Class":
+    #             option_list = list(df[cls[m]].unique())
+    #             for gg in range(len(option_list)):
+    #                 print(gg,": ",option_list[gg])
+    #             #print(df[cls[m]].unique())
+    #             print("\n\n")
+    #             f = int(input("Option: "))
+    #             print("\n")
+    #             if f < 0 or f >= len(option_list):
+    #                 exit()
+    #             input_list.append(option_list[f])
+    #     final_output,perc = predict(input_list,result,cls,list(set(df["Class"])))
+    #     print("Result: \n")
+    #     print(final_output, " with Probability: ",perc)
+    #     break
 
