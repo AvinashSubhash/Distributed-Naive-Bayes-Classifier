@@ -71,6 +71,7 @@ if __name__ == "__main__":
     temp=[]
     fit_val = mp.Queue()
     result={}
+    a=time.time()
     for i in range(4):
         temp.append(cls[i*ratio:(i+1)*ratio])
     x = mp.Process(target=DivideAndWork,args=(temp,fit_val))
@@ -78,7 +79,10 @@ if __name__ == "__main__":
     x.join()
     while not fit_val.empty():
         result.update(fit_val.get())
+    b = time.time()
+    time_for_parallel = b-a
     #print(result)
+    print("Time Difference: ",time_for_parallel)
     
     
     #Menu Driven Section
