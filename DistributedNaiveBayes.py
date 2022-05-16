@@ -4,7 +4,9 @@ import pandas as pd
 import numpy as np
 import multiprocessing as mp
 import threading as th
-import random 
+import random
+import time
+import NaveBayes as nb
 
 k_val=1
 df = pd.read_csv('out.csv')
@@ -97,6 +99,7 @@ if __name__ == "__main__":
                     exit()
                 input_list.append(option_list[f])
         final_output,perc = predict(input_list,result,cls,list(set(df["Class"])))
+        print("Result: \n")
         print(final_output, " with Probability: ",perc)
         break
 
