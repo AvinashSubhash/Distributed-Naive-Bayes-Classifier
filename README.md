@@ -1,13 +1,23 @@
 # Distributed-Naive-Bayes-Classifier
-Analysis of Naive Bayes classifier by applying Distributed Computing.
 
-Models used : 
+## Overview
+This project implements a Naive Bayes Classifier from scratch for categorical datasets, using various approaches including single-threaded, multi-threaded, and distributed computing. The classifier predicts class labels based on input features and supports efficient parallel computation.
 
-1. Plain Naive Bayes Algorithm
-2. Naive Bayes ALgorithm with MPI module
-3. Naive Bayes Algorithm with multiprocessing module and multithreading module.
+## Key Features:
 
-# Installation Steps
+### File 1: Multi-threaded Naive Bayes Classifier
+Uses Python's multiprocessing and threading libraries to distribute computation across multiple threads and processes.
+Demonstrates parameter estimation using counters and logical operations for efficient computations.
+
+### File 2: Distributed Naive Bayes Classifier (MPI)
+Leverages mpi4py for distributed computation.
+Splits data across multiple processes to compute probabilities independently and aggregates the results using MPI communication.
+
+### File 3: Single-threaded Naive Bayes Classifier
+A basic implementation of the Naive Bayes algorithm.
+Provides a clean and simple approach to training and predicting class labels for categorical datasets.
+
+## Installation Steps
 
 1. Install necessary packages
 
